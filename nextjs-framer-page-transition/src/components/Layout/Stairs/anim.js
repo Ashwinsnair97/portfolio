@@ -1,0 +1,52 @@
+export const expand = {
+    initial: {
+        top: 0
+    },
+    enter: (i) => ({    
+        top: "100vh",
+        transition: {
+            duration: 0.8,
+            delay: 0.2 * i,
+            ease: [0.215, 0.61, 0.355, 1],
+        },
+        transitionEnd: { height: "0", top: "0" }
+    }),
+    exit: (i) => ({
+        height: "100vh",
+        transition: {
+            duration: 0.8,
+            delay: 0.2 * i,
+            ease: [0.215, 0.61, 0.355, 1]
+        }
+    })
+}
+export const opacity = {
+    initial: {
+        opacity: 0.5
+    },
+    enter: {
+        opacity: 0
+    },
+    exit: {
+        opacity: 0.5,
+        
+    }
+}
+
+export const text = {
+    initial: {
+        opacity: 1,
+    },
+    enter: {
+        opacity: 0,
+        top: 900,
+        transition: {duration: 1, delay: .4, ease: [0.215, 0.61, 0.355, 1]},
+        transitionEnd: {top: "10vh"}
+    },
+    exit: {
+        opacity: 1,
+        top: "40vh",
+        transition: {duration: 1, delay: .4, ease: [0.215, 0.61, 0.355, 1]},
+        // transitionEnd: {top: "40%"} 
+    }
+}
