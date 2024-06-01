@@ -39,7 +39,7 @@ export default function Home({ setGifUrl, gifUrl }) {
 
           <div className="flex items-end h-screen w-screen justify-center bg-white p-6">
             <span ref={ref} style={{ opacity: (0.8 - percentage) * 2 }} >
-              <AnimatedText text={"JACOB"} className={"font-serif font-semibold uppercase text-10xl text-black"} />
+              <AnimatedText text={"SAKSHI"} className={"font-mono font-semibold uppercase text-10xl text-black"} />
             </span>
           </div>
           <div className='relative h-img w-full bg-white'>

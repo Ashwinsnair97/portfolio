@@ -2,6 +2,7 @@ import { forwardRef } from 'react';
 import styles from './style.module.scss';
 import Magnetic from '../magnetic';
 import { color, motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Header = forwardRef(function index(props, ref) {
 
@@ -20,7 +21,13 @@ const Header = forwardRef(function index(props, ref) {
 }
 
   return (
-    <div className={styles.headerComponent}>
+    <div className={props.open? styles.headerComponentOpen:styles.headerComponent}>
+      <div className={styles.headerTop}>
+      <Magnetic>
+      <div className='font-bold text-black p-10'>
+        Sakshi Katiyar
+        </div>  
+      </Magnetic>
       <Magnetic>
         <motion.div 
         initial="plus"
@@ -42,6 +49,24 @@ const Header = forwardRef(function index(props, ref) {
           <div ref={ref} onClick={() => {props.toggle()}} className={styles.bounds}></div>
         </motion.div>
       </Magnetic>
+      <Magnetic>
+      <div className='font-bold text-black p-10'>
+        Bangalore India
+        </div>  
+      </Magnetic>
+      </div>
+      <div>
+        {props.open? 
+       <div className='relative top-0 bottom-0 left-0 right-0 width-full height-full gap-12 p-4 z-100 font-bold bg-black text-white content-center'>
+       <Link className="p-2" href="/" onClick={() => setTimeout(()=> props.toggle(),1500)}>Home</Link>
+       <Link className="p-2" href="/about" onClick={() => setTimeout(()=> props.toggle(),1500)}>About</Link>
+       <Link className="p-2" href="/contact" onClick={() => setTimeout(()=> props.toggle(),1500)}>Contact</Link>
+   </div> 
+      :
+      <></>
+      }
+      
+      </div>
     </div>
   )
 }
