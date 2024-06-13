@@ -2,11 +2,14 @@ import Curve from '@/components/Layout/Curve'
 import Head from 'next/head'
 import Stairs from '@/components/Layout/Stairs'
 import { useScrollPercentage } from 'react-scroll-percentage'
-import { motion, stagger } from 'framer-motion'
 import AnimatedText from '@/components/animatedText'
 
+import HorizontalScrollCarousel from '@/components/HorizontalCarousel';
+import ImgGrid from '@/components/ImgGrid';
+
+
 export default function About() {
-    const [ref, percentage] = useScrollPercentage({
+  const [ref, percentage] = useScrollPercentage({
     threshold: 0,
   })
   return (
@@ -18,21 +21,34 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stairs backgroundColor={"#BCF366"}>
-      
-      <main className="flex min-h-screen flex-col items-center justify-between text-6xl text-slate-900 bg-neutral-900 overflow-clip hover:overflow-y-visible">
-      <div className="flex items-center h-screen w-screen justify-center bg-white p-6">
-        {/* <Tooltip text="Name" gifUrl={gifUrl}> */}
-          {/* <motion.span initial={{y:20, opacity:0}} animate={{y:0, opacity:1}} transition={{ staggerChildren: 0.7}} ref={ref} className="font-serif font-semibold uppercase text-10xl text-black" style={{ opacity: (0.8 - percentage) * 2 }}>
-            {"ABOUT".split("").map((char) => (
-              <motion.span >{char}</motion.span>
-            ))}
-          </motion.span> */}
-          <span ref={ref} style={{ opacity: (0.8 - percentage) * 2 }}>
-         <AnimatedText text={"ABOUT"} className={"font-serif font-semibold uppercase text-10xl text-black"}/>
-         </span>
-        {/* </Tooltip> */}
-      </div>
-      </main>
+
+        <main className="flex min-h-screen flex-col items-center justify-between text-6xl text-slate-900 bg-neutral-900 overflow-clip hover:overflow-y-visible">
+          
+          <div className='relative h-img w-full bg-white'>
+            <ImgGrid />
+            <div className="flex items-end h-screen w-screen justify-center bg-white p-6 absolute sticky top-0">
+              <span ref={ref} style={{ opacity: (0.8 - percentage) * 2 }}>
+                <AnimatedText text={"ABOUT"} className={"font-serif font-semibold uppercase text-10xl text-black"} />
+              </span>
+            </div>
+          </div>
+          <div className='text-8xl text-black font-serif bg-white height-full'>
+            <p className='height-full p-12 font-medium'>
+            I am Sakshi Katiyar- a Product Designer based in India.
+            With over 5 years of experience, I have been transforming ideas 
+            into beautiful and engaging products that connect the vision into customer’s emotions.
+            The journey commenced with the Visual Design (graphics and illustration) 
+            embodying brand guidelines and navigating meticulously through design tools towards decision-making and creating Websites, Mobile Applications and Dashboards.
+
+            </p>
+          </div>
+          <HorizontalScrollCarousel />
+          <div className="flex h-threequarter items-center justify-center">
+            <span className="font-mono font-semibold uppercase text-neutral-500">
+              Contact Us
+            </span>
+          </div>
+        </main>
       </Stairs>
     </>
   )

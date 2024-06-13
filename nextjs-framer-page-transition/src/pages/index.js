@@ -1,16 +1,10 @@
 import Head from 'next/head'
-import Curve from '@/components/Layout/Curve'
 import Stairs from '@/components/Layout/Stairs'
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-// import Tooltip from "../components/Tooltip";
-// import gifUrl from "../../public/imgs/IXNp.gif"
-// import gifUrl from "../../public/imgs/4SHX.gif"
 import { useScrollPercentage } from 'react-scroll-percentage'
 import HorizontalScrollCarousel from '@/components/HorizontalCarousel';
 import ImgGrid from '@/components/ImgGrid';
-import Header from '@/components/header';
-import StickyCursor from '@/components/stickyCursor'
 import AnimatedText from '@/components/animatedText';
 
 
@@ -39,7 +33,7 @@ export default function Home({ setGifUrl, gifUrl }) {
 
           <div className="flex items-end h-screen w-screen justify-center bg-white p-6">
             <span ref={ref} style={{ opacity: (0.8 - percentage) * 2 }} >
-              <AnimatedText text={"SAKSHI"} className={"font-mono font-semibold uppercase text-10xl text-black"} />
+              <AnimatedText text={"ASHWIN"} className={"font-mono font-semibold uppercase text-10xl text-black"} />
             </span>
           </div>
           <div className='relative h-img w-full bg-white'>
