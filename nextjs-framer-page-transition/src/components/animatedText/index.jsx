@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 
 
-export default function AnimatedText({text, className}) {
+export default function AnimatedText({text, className, italic}) {
 
     const defaultAnimations = {
         hidden: {
@@ -15,6 +15,8 @@ export default function AnimatedText({text, className}) {
         }
     }
     console.log(text)
+
+    // fonted = 'font-cursive'
 
     return (
         <motion.span
@@ -37,7 +39,11 @@ export default function AnimatedText({text, className}) {
                         ease: [0.215, 0.61, 0.355, 1]
                     }
                 }}
-                className="inline-block" variants={defaultAnimations}>{char}</motion.span>
+                className="inline-block" style={{
+                    fontFamily: char == italic? 'Playfair Display': 'Exo', 
+                    fontStyle: char == italic? 'italic': 'normal',
+                    fontWeight: char == italic? '600': '500',
+                }} variants={defaultAnimations}>{char}</motion.span>
             ))}
         </motion.span>
     )

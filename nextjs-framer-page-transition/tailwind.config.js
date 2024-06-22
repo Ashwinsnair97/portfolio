@@ -12,7 +12,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontSize: {
-        '10xl': '25vw'
+        '10xl': '29vw'
       },
       height: {
         'half': '50vh',
@@ -26,7 +26,15 @@ module.exports = {
       },
       margin: {
         'full': '100vh'
-      }
+      },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+        // 'cursive': ['Playwrite IT Moderna', 'cursive'],
+        // 'itim': ["Itim", 'cursive'],
+        // 'tenor': ["Tenor Sans", 'sans-serif'],
+        'exo': ["Exo", 'sans-serif'],
+        'play': ["Playfair Display", 'serif']
+      },
     },
   },
   plugins: [],

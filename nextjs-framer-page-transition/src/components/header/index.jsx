@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import styles from './style.module.scss';
 import Magnetic from '../magnetic';
-import { color, motion } from 'framer-motion';
+import { color, motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
 const Header = forwardRef(function index(props, ref) {
@@ -20,12 +20,41 @@ const Header = forwardRef(function index(props, ref) {
     }
   }
 
+  const headerAnimations = {
+    open: {
+      height: "100%",
+      backgroundColor: "black",
+      // opacity: "100%",
+      transition: {
+        duration: 0.5
+      }
+    },
+    close: {
+      height: "10%",
+      // backgroundColor: "black", 
+      // rotate: 135,
+      // color: "white",
+      // opacity:0,
+      transition: {
+        duration: 0.5
+      }
+    }
+  }
+
   return (
-    <div className={props.open ? styles.headerComponentOpen : styles.headerComponent}>
+    // <div className={props.open ? styles.headerComponentOpen : styles.headerComponent}>
+    // <AnimatePresence mode='wait'>
+      <motion.div
+        initial="close"
+        animate={props.open ? "open" : "close"}
+        variants={headerAnimations}
+        className={styles.headerComponent}
+      >
+        
       <div className={styles.headerTop}>
         <Magnetic>
-          <div className='font-bold text-black p-10'>
-          <Link className="p-2" href="/">
+          <div className='font-exo font-normal text-black p-10'>
+          <Link className="p-2" href="/projects">
             Sakshi Katiyar
             </Link>
           </div>
@@ -52,12 +81,13 @@ const Header = forwardRef(function index(props, ref) {
           </motion.div>
         </Magnetic>
         <Magnetic>
-          <div className='font-bold text-black p-10'>
+          <div className='font-exo font-normal text-black p-10'>
             Bangalore India
           </div>
         </Magnetic>
       </div>
       <div className='width-screen justify-center'>
+      <AnimatePresence mode='wait'>
         {props.open ?
           <ul role="list" className="width-screen divide-y divide-gray-100 text-5xl">
             <li key="home" className="flex width-screen justify-between gap-x-6 py-5 mx-10">
@@ -78,9 +108,13 @@ const Header = forwardRef(function index(props, ref) {
           :
           <></>
         }
+        </AnimatePresence>
 
       </div>
-    </div>
+      
+      </motion.div>
+      // </AnimatePresence>
+    // </div>
   )
 }
 )

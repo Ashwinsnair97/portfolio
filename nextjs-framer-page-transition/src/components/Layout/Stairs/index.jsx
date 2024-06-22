@@ -13,6 +13,7 @@ const routes = {
 export default function Layout({children, backgroundColor}) {
 
     const router = useRouter();
+    console.log("routes: ", routes)
 
     const anim = (variants, custom=null) => {
         return {

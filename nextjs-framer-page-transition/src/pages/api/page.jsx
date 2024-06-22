@@ -2,7 +2,7 @@ import Curve from '@/components/Layout/Curve'
 import Head from 'next/head'
 import Stairs from '@/components/Layout/Stairs'
 
-export default function Contact() {
+export default function Api() {
   return (
     <>
       <Head>
