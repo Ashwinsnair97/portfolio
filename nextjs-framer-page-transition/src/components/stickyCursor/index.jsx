@@ -110,7 +110,7 @@ export default function index({stickyElement, gifUrl}) {
         }}
         className={styles.customCursor}
         ref={cursor}>   
-           {gifUrl == ""? <></>: (<Image src={gifUrl} alt="Tooltip GIF" height={500} width={500}/>)}
+           {gifUrl == ""? <></>: (<Image src={gifUrl} alt="Tooltip GIF" height={200} width={200}/>)}
       </motion.div>
     </div>
   )

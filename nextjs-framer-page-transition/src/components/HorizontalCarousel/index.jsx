@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { redirect } from 'next/navigation'
 import { useRouter } from 'next/navigation'
+import { cards } from "@/constants";
 
 
 export default function HorizontalScrollCarousel() {
@@ -17,7 +18,7 @@ export default function HorizontalScrollCarousel() {
     return (
       <section ref={targetRef} className="relative h-[800vh] w-[100vw] ">
         <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden bg-white rounded-b-10xl">
-          <div className="relative text-10xl">
+          <div className="relative font-exo text-10xl">
             W<span className="font-play italic">O</span>RK
           </div>
           <motion.div style={{ x }} className="absolute flex gap-28 z-10">
@@ -39,7 +40,7 @@ export default function HorizontalScrollCarousel() {
         key={card.id}
         className="group relative h-[80vh] w-[80vh] overflow-hidden bg-neutral-200 rounded-3xl cursor-pointer"
         style={{border: "1px solid #555"}}
-        onClick={()=> router.push('/about') }
+        onClick={()=> router.push(card.link) }
       >
         <div
           style={{
@@ -67,45 +68,3 @@ export default function HorizontalScrollCarousel() {
       </div>
     );
   };
-  
-  
-  
-  const cards = [
-    
-    {
-      url: "/imgs/Cover_image_1.png",
-      url2: "/imgs/Hover_image_1.png",
-      title: "Title 2",
-      id: 2,
-    },
-    {
-      url: "../imgs/Cover_image_2.png",
-      url2: "/imgs/Hover_image_2.png",
-      title: "Title 3",
-      id: 3,
-    },
-    {
-      url: "../imgs/Cover_image_3.png",
-      url2: "/imgs/Hover_image_3.png",
-      title: "Title 4",
-      id: 4,
-    },
-    {
-      url: "/imgs/Cover_image_4.png",
-      url2: "/imgs/Hover_image_4.png",
-      title: "Title 5",
-      id: 5,
-    },
-      {
-        url: "/imgs/Cover_image_5.png",
-        url2: "/imgs/Hover_image_5.png",
-        title: "Title 6",
-        id: 6,
-      },
-      {
-        url: "/imgs/Cover_image_6.png",
-        url2: "/imgs/Hover_image_6.png",
-        title: "Title 1",
-        id: 1,
-      },
-  ];

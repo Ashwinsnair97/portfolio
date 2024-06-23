@@ -54,7 +54,7 @@ const Header = forwardRef(function index(props, ref) {
       <div className={styles.headerTop}>
         <Magnetic>
           <div className='font-exo font-normal text-black p-10'>
-          <Link className="p-2" href="/projects">
+          <Link className="p-2" href="/">
             Sakshi Katiyar
             </Link>
           </div>

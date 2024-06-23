@@ -6,6 +6,7 @@ import AnimatedText from '@/components/animatedText'
 
 import HorizontalScrollCarousel from '@/components/HorizontalCarousel';
 import ImgGrid from '@/components/ImgGrid';
+import ProjectsGrid from '@/components/projectsGrid'
 
 
 export default function Projects() {
@@ -22,7 +23,7 @@ export default function Projects() {
         <main className="flex min-h-screen flex-col items-center justify-between text-6xl text-slate-900 bg-neutral-900 overflow-clip hover:overflow-y-visible">
           
           <div className='relative h-img w-full bg-white rounded-b-10xl'>
-            <ImgGrid />
+            <ProjectsGrid />
             <div className="flex items-end h-screen w-screen justify-center bg-white p-6 absolute sticky top-0 rounded-b-10xl">
               <span>
                 <AnimatedText text={"WORK"} className={"font-serif font-medium uppercase text-10xl text-black"} italic={"O"} />

@@ -3,6 +3,8 @@
 @import '../components/Layout/Curve/style.scss';
 @import '../components/header/style.module.scss';
 @import '../components/stickyCursor/style.module.scss';
+@import '../components/CarouselClick/styles.scss';
+@import '../components/EmblaCarousel/styles.scss';
 
 // @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
@@ -37,5 +39,7 @@
         display: flex;
         gap: 40px;
     }
-    
+    .p {
+        padding: 40px;
+    }
 }

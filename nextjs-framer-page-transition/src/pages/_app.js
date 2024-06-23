@@ -44,7 +44,7 @@ export default function App({ Component, pageProps, router }) {
         }
     };
 
-
+    console.log("App router: ", router)
     return (
         <div className='overscroll-y-auto'>
            

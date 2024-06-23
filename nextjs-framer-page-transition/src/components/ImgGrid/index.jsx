@@ -22,13 +22,13 @@ export default function ImgGrid() {
                 <Image src={"/imgs/3.png"} style={{border: "1px solid #555",}} alt="Tooltip GIF" height={300} width={300} />
             </div>
             <div style={styler} className="col-start-5 h-24">
-                <Image src={"/imgs/4.png"} style={{border: "1px solid #555",}} alt="Tooltip GIF" height={300} width={300} />
+                <Image src={"/imgs/11.png"} alt="Tooltip GIF" height={300} width={300} />
             </div>
             <div style={styler} className="col-end-8 h-24">
                 <Image src={"/imgs/5.png"} style={{border: "1px solid #555",}} alt="Tooltip GIF" height={300} width={300} />
             </div>
             <div style={styler} className="col-start-3 h-24">
-                <Image src={"/imgs/6.png"} style={{border: "1px solid #555",}} alt="Tooltip GIF" height={300} width={300} />
+                <Image src={"/imgs/4.png"} style={{border: "1px solid #555",}} alt="Tooltip GIF" height={300} width={300} />
             </div>
         </div>
     )
