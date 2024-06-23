@@ -4,9 +4,9 @@ import Stairs from '@/components/Layout/Stairs'
 import { useRouter } from 'next/navigation'
 import { useParams } from 'next/navigation'
 import { CarouselClick } from '@/components/CarouselClick'
-import { projects } from './constants'
+// import { projects } from './constants'
 import { EmblaCarousel } from '@/components/EmblaCarousel'
-import { cards } from '@/constants'
+import { cards, projects } from '@/constants'
 
 
 export default function Projects() {
