@@ -7,6 +7,7 @@ import AnimatedText from '@/components/animatedText'
 import HorizontalScrollCarousel from '@/components/HorizontalCarousel';
 import ImgGrid from '@/components/ImgGrid';
 import ProjectsGrid from '@/components/projectsGrid'
+import ContactUs from '@/components/contactUs'
 
 
 export default function Projects() {
@@ -30,10 +31,8 @@ export default function Projects() {
               </span>
             </div>
           </div>
-          <div className="flex h-threequarter items-center justify-center">
-            <span className="font-mono font-semibold uppercase text-neutral-500">
-              Contact Us
-            </span>
+          <div className="flex h-threequarter w-full items-center justify-center">
+          <ContactUs/>
           </div>
         </main>
       </Stairs>

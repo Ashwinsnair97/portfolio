@@ -44,18 +44,18 @@ const Header = forwardRef(function index(props, ref) {
   return (
     // <div className={props.open ? styles.headerComponentOpen : styles.headerComponent}>
     // <AnimatePresence mode='wait'>
-      <motion.div
-        initial="close"
-        animate={props.open ? "open" : "close"}
-        variants={headerAnimations}
-        className={styles.headerComponent}
-      >
-        
+    <motion.div
+      initial="close"
+      animate={props.open ? "open" : "close"}
+      variants={headerAnimations}
+      className={styles.headerComponent}
+    >
+
       <div className={styles.headerTop}>
         <Magnetic>
           <div className='font-exo font-normal text-black p-10'>
-          <Link className="p-2" href="/">
-            Sakshi Katiyar
+            <Link className="p-2" href="/">
+              Sakshi Katiyar
             </Link>
           </div>
         </Magnetic>
@@ -86,34 +86,29 @@ const Header = forwardRef(function index(props, ref) {
           </div>
         </Magnetic>
       </div>
-      <div className='width-screen justify-center'>
-      <AnimatePresence mode='wait'>
-        {props.open ?
-          <ul role="list" className="width-screen divide-y divide-gray-100 text-5xl">
-            <li key="home" className="flex width-screen justify-between gap-x-6 py-5 mx-10">
-              <Link className="p-2" href="/projects" onClick={() => setTimeout(() => props.toggle(), 1500)}>Projects</Link>
-            </li>
-            <li key="about" className="flex justify-between gap-x-6 py-5 mx-10">
-              <Link className="p-2" href="/about" onClick={() => setTimeout(() => props.toggle(), 1500)}>About</Link>
-            </li>
-            <li key="contact" className="flex justify-between gap-x-6 py-5 mx-10">
-              <Link className="p-2" href="/contact" onClick={() => setTimeout(() => props.toggle(), 1500)}>Contact</Link>
-            </li>
-          </ul>
-          //      <div className='relative top-0 bottom-0 left-0 right-0 width-full height-full gap-12 p-4 z-100 font-bold bg-black text-white content-center'>
-          //      <Link className="p-2" href="/" onClick={() => setTimeout(()=> props.toggle(),1500)}>Home</Link>
-          //      <Link className="p-2" href="/about" onClick={() => setTimeout(()=> props.toggle(),1500)}>About</Link>
-          //      <Link className="p-2" href="/contact" onClick={() => setTimeout(()=> props.toggle(),1500)}>Contact</Link>
-          //  </div> 
-          :
-          <></>
-        }
+      <div className='justify-center font-exo' style={{width: "100%"}}>
+        <AnimatePresence mode='wait'>
+          {props.open ?
+            <div className="width-full divide-y divide-gray-100 text-7xl">
+              <div key="home" className="flex justify-between gap-x-8 py-5 mx-10 hover:font-play hover:italic hover:lowercase">
+                <Link className="p-2" href="/projects" onClick={() => setTimeout(() => props.toggle(), 1500)}>PROJECTS</Link>
+              </div>
+              <div key="about" className="flex width-screen justify-between gap-x-6 py-5 mx-10 hover:font-play hover:italic hover:lowercase">
+                <Link className="p-2" href="/about" onClick={() => setTimeout(() => props.toggle(), 1500)}>ABOUT</Link>
+              </div>
+              <div key="contact" className="flex width-screen justify-between gap-x-6 py-5 mx-10 hover:font-play hover:italic hover:lowercase">
+                <Link className="p-2" href="/contact" onClick={() => setTimeout(() => props.toggle(), 1500)}>CONTACT</Link>
+              </div>
+            </div>
+            :
+            <></>
+          }
         </AnimatePresence>
 
       </div>
-      
-      </motion.div>
-      // </AnimatePresence>
+
+    </motion.div>
+    // </AnimatePresence>
     // </div>
   )
 }

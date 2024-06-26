@@ -6,6 +6,7 @@ import AnimatedText from '@/components/animatedText'
 
 import HorizontalScrollCarousel from '@/components/HorizontalCarousel';
 import ImgGrid from '@/components/ImgGrid';
+import ContactUs from '@/components/contactUs'
 
 
 export default function About(props) {
@@ -48,11 +49,10 @@ export default function About(props) {
             </div>
           </div>
           <HorizontalScrollCarousel />
-          <div className="flex h-threequarter items-center justify-center">
-            <span className="font-mono font-semibold uppercase text-neutral-500">
-              Contact Us
-            </span>
+          <div className="flex h-threequarter w-full items-center justify-center">
+          <ContactUs/>
           </div>
+         
         </main>
       </Stairs>
     </>

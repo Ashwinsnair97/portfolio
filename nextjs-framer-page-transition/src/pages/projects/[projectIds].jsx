@@ -7,6 +7,7 @@ import { CarouselClick } from '@/components/CarouselClick'
 // import { projects } from './constants'
 import { EmblaCarousel } from '@/components/EmblaCarousel'
 import { cards, projects } from '@/constants'
+import ContactUs from '@/components/contactUs'
 
 
 export default function Projects() {
@@ -26,26 +27,38 @@ export default function Projects() {
             </Head>
             <Stairs backgroundColor="#FFF">
                 <main className="flex min-h-screen w-screen flex-col items-center justify-between text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
-                    <div className='pt-60 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
-                        <span className='text-xl p-12 text-center justify-center w-full'> TOOL INFO </span>
-                        <div className='w-full text-left text-4xl p-12 font-normal leading-normal'>
-                            {projects[header]? projects[header]["description"]: ""}
-                        </div>
+                    {
+                        (projects[header]["before"] ? projects[header]["before"] : []).map((element) => {
+                            return (
+                                <div className='pt-60 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
+                                    <span className='text-xl p-12 text-center justify-center w-full'> {element.header} </span>
+                                    <div className='w-full text-left text-4xl p-12 font-normal leading-normal'>
+                                        {element.description}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                    <div className='w-full bg-white'>
+                        <EmblaCarousel imgList={projects[header] ? projects[header]["imgs"] : []} />
                     </div>
-                    <div className='pt-20 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
-                        <span className='text-xl p-12 text-center justify-center w-full'> OVERVIEW</span>
-                        <div className='w-full text-left text-4xl p-12 font-normal leading-normal'>
-                            {projects[header]? projects[header]["overview"]: ""}
-                        </div>
-                    </div>
-                    <div className='w-full pb-80 bg-white'>
-                        <EmblaCarousel imgList={projects[header]? projects[header]["imgs"]: []} />
-                    </div>
+                    {
+                        (projects[header]["after"] ? projects[header]["after"] : []).map((element) => {
+                            return (
+                                <div className='pt-60 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
+                                    <span className='text-xl p-12 text-center justify-center w-full'> {element.header} </span>
+                                    <div className='w-full text-left text-4xl p-12 font-normal leading-normal'>
+                                        {element.description}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                     <div className='pt-20 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
                         <span className='text-xl p-12 text-center justify-center w-full'> GO TO NEXT PROJECT PLEASE CLICK BELOW (ASK GEN AI) </span>
-                        
+
                     </div>
-                    <div className='h-screen w-screen bg-white justify-center rounded-b-10xl' style={{textAlign: "-webkit-center"}}>
+                    <div className='h-screen w-screen bg-white justify-center rounded-b-10xl' style={{ textAlign: "-webkit-center" }}>
                         <div
                             key={nextProject.id}
                             className="group relative h-[80vh] w-[80vh] overflow-hidden bg-neutral-200 rounded-3xl cursor-pointer"
@@ -70,13 +83,11 @@ export default function Projects() {
                                 }}
                                 className="absolute opacity-0 inset-0 z-0 transition-opacity duration-500 group-hover:opacity-100"
                             ></div>
-                            
+
                         </div>
                     </div>
-                    <div className="flex h-threequarter items-center justify-center">
-                        <span className="font-mono font-semibold uppercase text-neutral-500">
-                            Contact Us
-                        </span>
+                    <div className="flex h-threequarter w-full items-center justify-center">
+                        <ContactUs />
                     </div>
                 </main>
             </Stairs>
@@ -87,12 +98,12 @@ export default function Projects() {
 const findNextProject = (current, allCards) => {
     let position = 0;
     allCards.map((element, index) => {
-        if(element.title == current){
-            if(index == (allCards.length - 1)){
+        if (element.title == current) {
+            if (index == (allCards.length - 1)) {
                 position = 0;
             }
-            else{
-                position = index+1
+            else {
+                position = index + 1
             }
         }
     })

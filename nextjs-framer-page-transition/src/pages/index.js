@@ -6,6 +6,7 @@ import { useScrollPercentage } from 'react-scroll-percentage'
 import HorizontalScrollCarousel from '@/components/HorizontalCarousel';
 import ImgGrid from '@/components/ImgGrid';
 import AnimatedText from '@/components/animatedText';
+import ContactUs from '@/components/contactUs';
 
 
 export default function Home({ setGifUrl, gifUrl }) {
@@ -34,7 +35,7 @@ export default function Home({ setGifUrl, gifUrl }) {
         <main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
 
           <div className="flex items-end h-screen w-screen justify-center bg-white p-2">
-            <span ref={ref} style={{ opacity: (1.66 - percentage*2) }} >
+            <span ref={ref} style={{ opacity: (1.9 - percentage*2) }} >
               <AnimatedText text={"SAKSHI"} className={"font-exo font-medium uppercase text-10xl text-black"} italic={"A"} />
             </span>
           </div>
@@ -52,10 +53,8 @@ export default function Home({ setGifUrl, gifUrl }) {
           <></>
           </div> */}
           <HorizontalScrollCarousel />
-          <div className="flex h-threequarter items-center justify-center">
-            <span className="align-end font-mono font-semibold uppercase text-neutral-500">
-              Contact Us
-            </span>
+          <div className="flex h-threequarter w-full items-center justify-center">
+          <ContactUs/>
           </div>
 
         </main>
