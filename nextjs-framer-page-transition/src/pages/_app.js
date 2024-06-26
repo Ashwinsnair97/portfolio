@@ -8,6 +8,36 @@ import StickyCursor from '@/components/stickyCursor'
 import ReactDom from 'react-dom'
 import React from 'react';
 import Modal from '@/components/modal';
+import '@fontsource/exo/100.css';
+import '@fontsource/exo/200.css';
+import '@fontsource/exo/300.css';
+import '@fontsource/exo/400.css';
+import '@fontsource/exo/500.css';
+import '@fontsource/exo/600.css';
+import '@fontsource/exo/700.css';
+import '@fontsource/exo/800.css';
+import '@fontsource/exo/900.css';
+import '@fontsource/exo/100-italic.css';
+import '@fontsource/exo/200-italic.css';
+import '@fontsource/exo/300-italic.css';
+import '@fontsource/exo/400-italic.css';
+import '@fontsource/exo/500-italic.css';
+import '@fontsource/exo/600-italic.css';
+import '@fontsource/exo/700-italic.css';
+import '@fontsource/exo/800-italic.css';
+import '@fontsource/exo/900-italic.css';
+import '@fontsource/playfair-display/400.css';
+import '@fontsource/playfair-display/500.css';
+import '@fontsource/playfair-display/600.css';
+import '@fontsource/playfair-display/700.css';
+import '@fontsource/playfair-display/800.css';
+import '@fontsource/playfair-display/900.css';
+import '@fontsource/playfair-display/400-italic.css';
+import '@fontsource/playfair-display/500-italic.css';
+import '@fontsource/playfair-display/600-italic.css';
+import '@fontsource/playfair-display/700-italic.css';
+import '@fontsource/playfair-display/800-italic.css';
+import '@fontsource/playfair-display/900-italic.css';
 
 
 export default function App({ Component, pageProps, router }) {
