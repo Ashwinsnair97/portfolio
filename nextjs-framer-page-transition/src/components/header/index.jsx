@@ -97,7 +97,7 @@ const Header = forwardRef(function index(props, ref) {
                 <Link className="p-2" href="/about" onClick={() => setTimeout(() => props.toggle(), 1500)}>ABOUT</Link>
               </div>
               <div key="contact" className="flex width-screen justify-between gap-x-6 py-5 mx-10 hover:font-play hover:italic hover:lowercase">
-                <Link className="p-2" href="/contact" onClick={() => setTimeout(() => props.toggle(), 1500)}>CONTACT</Link>
+                <Link className="p-2" href="mailto:katiyarsakshi1@gmail.com" rel="noopener noreferrer" target="_blank">CONTACT</Link>
               </div>
             </div>
             :
