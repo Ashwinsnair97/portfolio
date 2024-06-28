@@ -12,13 +12,14 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontSize: {
-        '10xl': '29vw'
+        '10xl': '29vw',
+        'about': '4.5vw',
       },
       height: {
         'half': '50vh',
         'double': '200vh',
         'threequarter': '75vh',
-        'img': '400vh',
+        'img': '500vh',
         'imgdiv': '200vh'
       },
       borderRadius: {

@@ -28,7 +28,7 @@ export default function Layout({children, backgroundColor}) {
 
     const nbOfColumns = 3
     return (
-        <div className='page stairs' style={{backgroundColor}}>
+        <div className='page stairs z-50' style={{backgroundColor}}>
             <motion.div {...anim(opacity)} className='transition-background'/>
             <motion.p className='route' {...anim(text)}>
                 {routes[router.route]}

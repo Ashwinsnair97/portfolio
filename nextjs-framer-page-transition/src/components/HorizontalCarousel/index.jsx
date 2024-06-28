@@ -18,12 +18,12 @@ export default function HorizontalScrollCarousel() {
     return (
       <section ref={targetRef} className="relative h-[800vh] w-[100vw] ">
         <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden bg-white rounded-b-10xl">
-          <div className="relative font-exo text-10xl">
+          <div className="relative font-exo text-10xl text-black">
             W<span className="font-play italic">O</span>RK
           </div>
           <motion.div style={{ x }} className="absolute flex gap-28 z-10">
             {cards.map((card) => {
-              return <Card card={card} key={card.id} />;
+              return (card.overview? <Card card={card} key={card.id} />:<></>)
             })}
           </motion.div>
         </div>

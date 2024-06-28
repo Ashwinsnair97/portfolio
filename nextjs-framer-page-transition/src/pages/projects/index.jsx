@@ -21,7 +21,7 @@ export default function Projects() {
       </Head>
       <Stairs backgroundColor={"#BCF366"}>
 
-        <main className="flex min-h-screen flex-col items-center justify-between text-6xl text-slate-900 bg-neutral-900 overflow-clip hover:overflow-y-visible">
+        <main className="flex min-h-screen flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
           
           <div className='relative h-img w-full bg-white rounded-b-10xl'>
             <ProjectsGrid />
@@ -31,9 +31,9 @@ export default function Projects() {
               </span>
             </div>
           </div>
-          <div className="flex h-threequarter w-full items-center justify-center">
+          
           <ContactUs/>
-          </div>
+          
         </main>
       </Stairs>
     </>

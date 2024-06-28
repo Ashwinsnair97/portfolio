@@ -13,7 +13,7 @@ const styler = {
 }
 export default function ProjectsGrid() {
     return (
-        <div className="absolute w-full h-img px-40 flex flex-row flex-wrap z-10 content-center">
+        <div className="absolute w-full justify-center h-img flex flex-row flex-wrap z-10 content-center" style={{paddingLeft: "8vw", paddingRight: "8vw"}}>
             {cards.map((card) => {
               return( 
                 <div className="basis-1/3 p-8 gap-80 gap-y-80 justify-center align-center text-center" style={{textAlign: '-webkit-center'}}>

@@ -35,14 +35,14 @@ export default function Home({ setGifUrl, gifUrl }) {
         <main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
 
           <div className="flex items-end h-screen w-screen justify-center bg-white p-2">
-            <span ref={ref} style={{ opacity: (1.9 - percentage*2) }} >
+            <span ref={ref} style={{ opacity: (1.9 - percentage*2.2) }} >
               <AnimatedText text={"SAKSHI"} className={"font-exo font-medium uppercase text-10xl text-black"} italic={"A"} />
             </span>
           </div>
           <div className='relative h-img w-full bg-white'>
             <ImgGrid />
-            <div ref={ref2} className='absolute top-2/3 mt-80 text-center text-8xl z-10 sticky' style={{ opacity: (0.8 - percentage2) * 2 }}>
-              {"I am a designer driven by curiosity crafting user-centric experiences through well- thought out interfaces"}
+            <div ref={ref2} className='absolute top-2/3 mt-80 text-center text-about z-10 sticky' style={{ opacity: (1.9 - percentage2*2.2) }}>
+              {"I am a designer driven by curiosity crafting user-centric experiences through well-thought out interfaces"}
               {/* <span className='text-red-600' onMouseEnter={() => setGifUrl("/imgs/Ao.gif")} onMouseLeave={() => setGifUrl("")}>WORKING</span>
               {" with CLIENTS FROM ALL OVER THE "}
               <span className='text-blue-600' onMouseEnter={() => setGifUrl("/imgs/W31X.gif")} onMouseLeave={() => setGifUrl("")}>world</span>
@@ -53,9 +53,7 @@ export default function Home({ setGifUrl, gifUrl }) {
           <></>
           </div> */}
           <HorizontalScrollCarousel />
-          <div className="flex h-threequarter w-full items-center justify-center">
           <ContactUs/>
-          </div>
 
         </main>
       </Stairs>

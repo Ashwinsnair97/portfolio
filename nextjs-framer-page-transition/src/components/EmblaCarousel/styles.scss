@@ -1,7 +1,8 @@
 .embla {
     overflow: hidden;
-    height: 750px;
-    width: 1670px;
+    height: 35.9281vw;
+    width: 80vw;
+    border-radius: 1.2vw;
   }
   .embla__container {
     display: flex;
@@ -12,7 +13,7 @@
   }
 
 .embla__prev {
-  width: 5vw
+  width: 5vw;
 }
 .embla__next {
   width: 5vw

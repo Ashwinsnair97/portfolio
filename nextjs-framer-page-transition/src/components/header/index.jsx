@@ -23,7 +23,7 @@ const Header = forwardRef(function index(props, ref) {
   const headerAnimations = {
     open: {
       height: "100%",
-      backgroundColor: "black",
+      backgroundColor: "#000000",
       // opacity: "100%",
       transition: {
         duration: 0.5
@@ -31,7 +31,7 @@ const Header = forwardRef(function index(props, ref) {
     },
     close: {
       height: "10%",
-      // backgroundColor: "black", 
+      backgroundColor: "#00000000", 
       // rotate: 135,
       // color: "white",
       // opacity:0,
@@ -89,7 +89,7 @@ const Header = forwardRef(function index(props, ref) {
       <div className='justify-center font-exo' style={{width: "100%"}}>
         <AnimatePresence mode='wait'>
           {props.open ?
-            <div className="width-full divide-y divide-gray-100 text-7xl">
+            <div key="header_main" className="width-full divide-y divide-gray-100 text-white" style={{fontSize: "3vw"}}>
               <div key="home" className="flex justify-between gap-x-8 py-5 mx-10 hover:font-play hover:italic hover:lowercase">
                 <Link className="p-2" href="/projects" onClick={() => setTimeout(() => props.toggle(), 1500)}>PROJECTS</Link>
               </div>
