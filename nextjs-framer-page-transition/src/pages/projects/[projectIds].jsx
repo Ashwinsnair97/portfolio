@@ -16,7 +16,8 @@ const printNormalProject = (header, setHeader, nextProject) => {
     const router = useRouter()
     return(
         <Stairs backgroundColor="#FFF">
-        <main className="flex min-h-screen w-screen flex-col items-center justify-between text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
+        <main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible" style={{zIndex: -3}}>
+          <div className=" bg-white rounded-b-10xl" style={{zIndex: 1}}>
             {
                 (projects[header]? projects[header]["before"] : []).map((element) => {
                     return (
@@ -76,10 +77,8 @@ const printNormalProject = (header, setHeader, nextProject) => {
                     ></div>
 
                 </div>
-            </div>
-            <div className="flex h-threequarter w-full items-center justify-center">
+            </div></div>
                 <ContactUs />
-            </div>
         </main>
     </Stairs>
     )
@@ -89,7 +88,8 @@ const printImagesProject = (header, setHeader, nextProject) => {
     const router = useRouter()
     return(
         <Stairs backgroundColor="#FFF">
-        <main className="flex min-h-screen w-screen flex-col items-center justify-between text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
+        <main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible" style={{zIndex: -3}}>
+          <div className=" bg-white rounded-b-10xl" style={{zIndex: 1}}>
             <div className='flex pt-40 flex-col gap-y-20 items-center w-screen justify-center text-center bg-white border' style={{ textAlign: "-webkit-center" }}>
             {(projects[header] ? projects[header]["imgs"] : []).map((img) => {
                 return (
@@ -141,10 +141,9 @@ const printImagesProject = (header, setHeader, nextProject) => {
                     ></div>
 
                 </div>
-            </div>
-            <div className="flex h-threequarter w-full items-center justify-center">
+            </div></div>
                 <ContactUs />
-            </div>
+
         </main>
     </Stairs>
     )

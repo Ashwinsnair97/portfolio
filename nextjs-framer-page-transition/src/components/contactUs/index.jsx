@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 export default function ContactUs() {
   return (
-    <div className="flex h-threequarter w-full items-center justify-center">
-      <div className='justify-center font-exo' style={{ width: "100%" }}>
-        <div className="w-1/2 justify-start text-left text-white">
+    <div className="flex relative bg-black h-threequarter w-full items-center justify-center" >
+      <div className='justify-center fixed font-exo content-end' style={{ width: "100%", bottom: 0, left: 0, right: 0, height: "80vh" }}>
+        <div className="w-1/2 justify-start text-left text-white" style={{paddingTop: "25vh"}}>
           <div className="width-1/2 divide-y divide-gray-100" style={{fontSize: "2vw"}}>
             <div key="contact" className="flex justify-between gap-x-8 mx-10 uppercase" style={{fontSize: "5vw", paddingTop: "1vw", paddingBottom: "1vw"}}>
               <div className="p-2">Find me on</div>

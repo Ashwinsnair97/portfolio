@@ -32,8 +32,8 @@ export default function Home({ setGifUrl, gifUrl }) {
         
       </Head>
       <Stairs backgroundColor={"#B0AD98"}>
-        <main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
-          
+        <main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible" style={{zIndex: -3}}>
+          <div className=" bg-white rounded-b-10xl" style={{zIndex: 1}}>
           <div className="flex items-end h-screen w-screen justify-center bg-white p-2">
             <span ref={ref} style={{ opacity: (1.9 - percentage*2.2) }} >
               <AnimatedText text={"SAKSHI"} className={"font-exo font-medium uppercase text-10xl text-black"} italic={"A"} />
@@ -53,6 +53,7 @@ export default function Home({ setGifUrl, gifUrl }) {
           <></>
           </div> */}
           <HorizontalScrollCarousel />
+          </div>
           <ContactUs/>
 
         </main>

@@ -20,9 +20,8 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stairs backgroundColor={"#BCF366"}>
-
-        <main className="flex min-h-screen flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
-          
+<main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible" style={{zIndex: -3}}>
+          <div className=" bg-white rounded-b-10xl" style={{zIndex: 1}}>
           <div className='relative h-img w-full bg-white rounded-b-10xl'>
             <ProjectsGrid />
             <div className="flex items-end h-screen w-screen justify-center bg-white p-6 absolute sticky top-0 rounded-b-10xl">
@@ -31,7 +30,7 @@ export default function Projects() {
               </span>
             </div>
           </div>
-          
+          </div>
           <ContactUs/>
           
         </main>

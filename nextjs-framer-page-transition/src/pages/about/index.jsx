@@ -23,8 +23,8 @@ export default function About(props) {
       </Head>
       <Stairs backgroundColor={"#BCF366"}>
 
-        <main className="flex min-h-screen flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible">
-          
+        <main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible" style={{zIndex: -3}}>
+          <div className=" bg-white rounded-b-10xl" style={{zIndex: 1}}>
           <div className='relative h-img w-full bg-white'>
             <ImgGrid />
             <div className="flex items-end h-screen w-screen justify-center bg-white absolute sticky top-0">
@@ -49,6 +49,7 @@ export default function About(props) {
             </div>
           </div>
           <HorizontalScrollCarousel />
+          </div>
           <ContactUs/>
          
         </main>
