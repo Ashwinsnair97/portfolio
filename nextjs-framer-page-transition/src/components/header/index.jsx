@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import styles from './style.module.scss';
 import Magnetic from '../magnetic';
-import { color, motion, AnimatePresence } from 'framer-motion';
+import { color, motion, AnimatePresence, delay, stagger } from 'framer-motion';
 import Link from 'next/link';
 
 const Header = forwardRef(function index(props, ref) {
@@ -31,7 +31,29 @@ const Header = forwardRef(function index(props, ref) {
     },
     close: {
       height: "10%",
-      backgroundColor: "#00000000", 
+      backgroundColor: "#00000000",
+      // rotate: 135,
+      // color: "white",
+      // opacity:0,
+      transition: {
+        duration: 0.5
+      }
+    }
+  }
+  const headerTextAnimations = {
+    open: {
+      opacity: "100%",
+      y: 0,
+      delay: stagger(0.1),
+      // opacity: "100%",
+      transition: {
+        duration: 0.5
+      }
+    },
+    close: {
+      opacity: "0%",
+      y: -500,
+      delay: stagger(0.1),
       // rotate: 135,
       // color: "white",
       // opacity:0,
@@ -86,20 +108,28 @@ const Header = forwardRef(function index(props, ref) {
           </div>
         </Magnetic>
       </div>
-      <div className='justify-center font-exo' style={{width: "100%"}}>
+      <div className='justify-center font-exo' style={{ width: "100%" }}>
         <AnimatePresence mode='wait'>
           {props.open ?
-            <div key="header_main" className="width-full divide-y divide-gray-100 text-white" style={{fontSize: "3vw"}}>
-              <div key="home" className="flex justify-between gap-x-8 py-5 mx-10 hover:font-play hover:italic hover:lowercase">
+          <AnimatePresence mode='wait'>
+            <motion.div
+              initial="close"
+              animate={props.open ? "open" : "close"}
+              variants={headerTextAnimations}
+              key="header_main"
+              className="width-full divide-y divide-gray-50 text-white"
+              style={{ fontSize: "6vw" }}>
+              <div key="home" className="flex justify-between gap-x-8 mx-10 hover:font-play hover:italic hover:lowercase">
                 <Link className="p-2" href="/projects" onClick={() => setTimeout(() => props.toggle(), 1500)}>PROJECTS</Link>
               </div>
-              <div key="about" className="flex width-screen justify-between gap-x-6 py-5 mx-10 hover:font-play hover:italic hover:lowercase">
+              <div key="about" className="flex width-screen justify-between gap-x-6 mx-10 hover:font-play hover:italic hover:lowercase">
                 <Link className="p-2" href="/about" onClick={() => setTimeout(() => props.toggle(), 1500)}>ABOUT</Link>
               </div>
-              <div key="contact" className="flex width-screen justify-between gap-x-6 py-5 mx-10 hover:font-play hover:italic hover:lowercase">
+              <div key="contact" className="flex width-screen justify-between gap-x-6 mx-10 hover:font-play hover:italic hover:lowercase">
                 <Link className="p-2" href="mailto:katiyarsakshi1@gmail.com" rel="noopener noreferrer" target="_blank">CONTACT</Link>
               </div>
-            </div>
+            </motion.div>
+            </AnimatePresence>
             :
             <></>
           }

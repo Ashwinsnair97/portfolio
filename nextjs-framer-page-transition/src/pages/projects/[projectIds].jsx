@@ -22,8 +22,8 @@ const printNormalProject = (header, setHeader, nextProject) => {
                 (projects[header]? projects[header]["before"] : []).map((element) => {
                     return (
                         <div className='pt-60 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
-                            <span className='text-xl p-12 text-center justify-center w-full'> {element.header} </span>
-                            <div className='w-full text-left text-4xl p-12 font-normal leading-normal'>
+                            <span className='text-xl p-12 text-center justify-center w-full' style={{fontSize: "1vw"}}> {element.header} </span>
+                            <div className='w-full text-left p-12 font-normal leading-normal' style={{fontSize: "2vw"}}>
                                 {element.description}
                             </div>
                         </div>
@@ -37,8 +37,8 @@ const printNormalProject = (header, setHeader, nextProject) => {
                 (projects[header] ? projects[header]["after"] : []).map((element) => {
                     return (
                         <div className='pt-60 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
-                            <span className='text-xl p-12 text-center justify-center w-full'> {element.header} </span>
-                            <div className='w-full text-left text-4xl p-12 font-normal leading-normal'>
+                            <span className='text-xl p-12 text-center justify-center w-full' style={{fontSize: "1vw"}}> {element.header} </span>
+                            <div className='w-full text-left p-12 font-normal leading-normal' style={{fontSize: "2vw"}}>
                                 {element.description}
                             </div>
                         </div>
