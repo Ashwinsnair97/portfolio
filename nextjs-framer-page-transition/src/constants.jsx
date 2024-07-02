@@ -131,12 +131,12 @@ export const projects =
         imageList: false,
         before: [
             {
-                header: "TOOL INFO",
+                header: "Tool Info",
                 description: (<>
-                    <p>The Contract Commitments Dashboard is an advanced analytical tool designed to identify and outline significant risks related to materials, their suppliers, purchase groups, and sites. It features comprehensive views that highlight material demand over specific periods, associated contracts, and risk identification. The tool facilitates proactive risk mitigation strategies, ensuring informed decision-making and enhanced supply chain management</p></>)
+                    <p>The Contract Commitments Dashboard is an advanced analytical tool designed to identify and outline significant risks related to materials, their suppliers, purchase groups, and sites. It features comprehensive views that highlight material demand over specific periods, associated contracts, and risk identification. The tool facilitates proactive risk mitigation strategies, ensuring informed decision-making and enhanced supply chain management.</p></>)
             },
             {
-                header: "OVERVIEW",
+                header: "Overview",
                 description: (
                     <>
                         <p>
@@ -209,17 +209,17 @@ export const projects =
         imageList: false,
         before: [
             {
-                header: "TOOL INFO",
+                header: "Tool Info",
                 description: (<>
                     <p>Recipe Simulator enables the user to make changes to the raws components going into the recipe of a finished good or make changes to a raws component directly in the portfolio and simulate to see the effects on the raws carbon emissions. </p></>)
             },
             {
-                header: "THE NEED",
+                header: "The Need",
                 description: (<>
                     <p>The <span className="font-bold">formulation team</span>  at Mars Pet Nutrition NA did not have a method to quantify the impact on <span className="font-bold">carbon emissions</span>  that they can potentially drive through <span className="font-bold">ingredient changes</span>  in recipes. </p></>)
             },
             {
-                header: "THE SOLUTION",
+                header: "The Solution",
                 description: (<>
                     <p>The Pawprint Recipe Footprint Modeler is a web app what-if scenario simulator that <span className="font-bold">estimates GHG emission impact</span> across the MARS PNNA portfolio when <span className="font-bold">a change is made in a recipe</span> of a product. The solution utilizes the same data foundation created for the Pawprint Sustainability report.</p></>)
             },
@@ -234,9 +234,9 @@ export const projects =
                 header: "Design- Driven Decisions",
                 description: (
                     <>
-                        <p>FILTERS SCREEN :</p>
+                        <p className="font-bold">FILTERS SCREEN :</p>
                         <ul>
-                            <li>Grouping of filters= The major pain point from the user base was the presence of a lot of options on the first page itself.  It was clearly pointing in the direction of going through the Hick’s Law checklist. So the ways to deal with were as follows: </li>
+                            <li>Grouping of filters: The major pain point from the user base was the presence of a lot of options on the first page itself.  It was clearly pointing in the direction of going through the Hick’s Law checklist. So the ways to deal with were as follows: </li>
                             <ol>
                                 <li>Try to reduce the number of options</li>
                                 <li>Find a way to hide items</li>
@@ -245,18 +245,18 @@ export const projects =
                                     As you can see, we went ahead with the third one, as it was the only option that was most suitable as per the requirements from the user. We narrowed down all the filters and put them in separate buckets for better decision making. </li>
                             </ol>
 
-                            <li>Nudge= Since the user base for this tool was mostly an elder age group (50+ age) who is majorly accustomed to the Excel and Power BI, introducing something that is entirely different in terms of look and feel, could have proven to be a drastic dip in usage, engagement and retention. To solve this problem, we introduced <span className="font-bold">Hotspots</span>- a minimalist UX element that is designed to capture a user’s attention without being intrusive or annoying. We wanted to give subtle hints/ signifiers (small cues or context changes) that can affect user’s decisions.</li>
+                            <li>Nudge: Since the user base for this tool was mostly an elder age group (50+ age) who is majorly accustomed to the Excel and Power BI, introducing something that is entirely different in terms of look and feel, could have proven to be a drastic dip in usage, engagement and retention. To solve this problem, we introduced <span className="font-bold">Hotspots</span>- a minimalist UX element that is designed to capture a user’s attention without being intrusive or annoying. We wanted to give subtle hints/ signifiers (small cues or context changes) that can affect user’s decisions.</li>
                         </ul>
-                        <p>SIMULATION SCREEN :</p>
+                        <p className="font-bold">SIMULATION SCREEN :</p>
                         <ul>
-                            <li>Validation Rules= To reduce the friction and an extra manual effort of going through all the steps and then getting an error to let the user know about the incorrect values entered, we used the Anchoring Bias- Users rely heavily on the first piece of information they see.
+                            <li>Validation Rules: To reduce the friction and an extra manual effort of going through all the steps and then getting an error to let the user know about the incorrect values entered, we used the Anchoring Bias- Users rely heavily on the first piece of information they see.
                                 It is useful to increase the perceived value. </li>
-                            <li>Disclaimer in Simulation Page= Before the users click on Run Simulation to see the impact, we take a kind of double confirmation from them to check if they did make changes in the recipe (which is mandatory to do for at least one recipe). This is pertaining to the <span className="font-bold">reactance</span>- a UX principle, psychology related to user behavior, where people tend to react indifferently when they are taken away from their choices or range of options. But we also kept in mind that it doesn’t incline towards dark pattern. </li>
+                            <li>Disclaimer in Simulation Page: Before the users click on Run Simulation to see the impact, we take a kind of double confirmation from them to check if they did make changes in the recipe (which is mandatory to do for at least one recipe). This is pertaining to the <span className="font-bold">reactance</span>- a UX principle, psychology related to user behavior, where people tend to react indifferently when they are taken away from their choices or range of options. But we also kept in mind that it doesn’t incline towards dark pattern. </li>
                         </ul>
-                        <p>IMPACT SCREEN :</p>
+                        <p className="font-bold">IMPACT SCREEN :</p>
                         <ul>
-                            <li>Color coded accordions= The tree/ hierarchy chart and the cards showing the impact for the respective sections as used in the filters, have the same colors, hence incorporating <span className="font-bold">‘Law of Similarity’</span>- users perceive relationship between the elements that look similar. This helps the users to connect the related elements and their insights quickly without much of a mental hassle. It also considers another UX principle as well which is <span className="font-bold">‘Discoverability’</span>- The ease with which users can discover the features of the tool. It means that the user can extract the knowledge they need of the product by looking at it. If the key elements to take action are well presented then discoverability is good.  </li>
-                            <li>Floating Action Buttons= We have provided the users with numerous options as download excel, download the slides in Powerpoint and save the simulation results and metrics. Since one of the use cases involve multi selection, we kept a FAB at the mid bottom of the screen, for displaying the selected filters. </li>
+                            <li>Color coded accordions: The tree/ hierarchy chart and the cards showing the impact for the respective sections as used in the filters, have the same colors, hence incorporating <span className="font-bold">‘Law of Similarity’</span>- users perceive relationship between the elements that look similar. This helps the users to connect the related elements and their insights quickly without much of a mental hassle. It also considers another UX principle as well which is <span className="font-bold">‘Discoverability’</span>- The ease with which users can discover the features of the tool. It means that the user can extract the knowledge they need of the product by looking at it. If the key elements to take action are well presented then discoverability is good.  </li>
+                            <li>Floating Action Buttons: We have provided the users with numerous options as download excel, download the slides in Powerpoint and save the simulation results and metrics. Since one of the use cases involve multi selection, we kept a FAB at the mid bottom of the screen, for displaying the selected filters. </li>
                         </ul>
                     </>
                 )
@@ -267,10 +267,10 @@ export const projects =
                 description: (
                     <>
                         <ul>
-                            <li>Tutorials at the top left corner of each page= We adopted <span className="font-bold">‘Priming’</span> as previous stimuli influence user’s decisions, by giving subtle visual or verbal suggestions in the form of tutorials (containing a guide to use the tool throughout, which is a collection of the steps, screenshots and GIFs), helping users recall specific information, influencing how they respond. Priming works by activating an association or representation in users short- term memory just before another stimulus or task is introduced. </li>
-                            <li>Validation Rules= To reduce the <span className="font-bold">‘Cognitive Load’</span>- total amount of mental effort that is required to complete a task, or basically the processing power needed by the users to interact with a product, we gave the validation rules for the user to go through, before proceeding into the next steps, hence reducing the friction in terms of the overall experience. </li>
-                            <li>UOM in headers= We provided the units of measurement in the table headers to give  a better sense of the information to the users- this is was a part of the feedback survey that we did on current sets of users and also a bunch of non-users (Please note that this survey was possible as we had the luxury of time!). </li>
-                            <li>Loader Comments= Since a huge amount of data is responsible for the functioning of this tool, it takes time to load the screens. So, we introduced fun facts about the brand and the tool, to make the wait time not dip the user’s attention, hence increasing the engagement and the retention of the users. </li>
+                            <li>Tutorials at the top left corner of each page: We adopted <span className="font-bold">‘Priming’</span> as previous stimuli influence user’s decisions, by giving subtle visual or verbal suggestions in the form of tutorials (containing a guide to use the tool throughout, which is a collection of the steps, screenshots and GIFs), helping users recall specific information, influencing how they respond. Priming works by activating an association or representation in users short- term memory just before another stimulus or task is introduced. </li>
+                            <li>Validation Rules: To reduce the <span className="font-bold">‘Cognitive Load’</span>- total amount of mental effort that is required to complete a task, or basically the processing power needed by the users to interact with a product, we gave the validation rules for the user to go through, before proceeding into the next steps, hence reducing the friction in terms of the overall experience. </li>
+                            <li>UOM in headers: We provided the units of measurement in the table headers to give  a better sense of the information to the users- this is was a part of the feedback survey that we did on current sets of users and also a bunch of non-users (Please note that this survey was possible as we had the luxury of time!). </li>
+                            <li>Loader Comments: Since a huge amount of data is responsible for the functioning of this tool, it takes time to load the screens. So, we introduced fun facts about the brand and the tool, to make the wait time not dip the user’s attention, hence increasing the engagement and the retention of the users. </li>
                         </ul>
                     </>
                 )
@@ -286,7 +286,7 @@ export const projects =
         imageList: false,
         before: [
             {
-                header: "OVERVIEW",
+                header: "Overview",
                 description: (
                     <>
                         <p>A user- friendly reporting interface to track Global Food metrics with automated consolidation of manual inputs to find difficulties in validating sales impacting KPIs and helping the Mars senior management teams align, manage and deploy business strategy across the functions.</p>
@@ -299,7 +299,7 @@ export const projects =
                 header: "Proposed Solution",
                 description: (
                     <>
-                        <p>Reporting Pages:</p>
+                        <p className="font-bold">Reporting Pages:</p>
                         <ul>
                             <li>Intelligent findings panel- highlighting the KPIs’ deviation against target values</li>
                             <li>On click KPI details breakdown</li>
@@ -308,7 +308,7 @@ export const projects =
                             <li>All KPIs visible at a time on a same page without any manual scroll</li>
                             <li>KPI search functionality</li>
                         </ul>
-                        <p>Admin Page:</p>
+                        <p className="font-bold">Admin Page:</p>
                         <ul>
                             <li>Intelligent findings panel- highlighting the KPIs’ deviation against target values</li>
                             <li>Create/ Modify/ Delete KPIs (single or multi-select) functionality</li>
@@ -376,12 +376,12 @@ export const projects =
         imageList: false,
         before: [
             {
-                header: "OVERVIEW",
+                header: "Overview",
                 description: (<>
                     <p>As the digital revolution continues to reshape how we consume media, over-the-top (OTT) platforms have become a staple in delivering diverse content ranging from TV shows to movies. However, the user experience (UX) of these platforms is often tailored to younger, tech-savvy users, potentially alienating older adults who may find the interface and functionalities challenging to navigate. This case study focuses on designing a sub-product within an OTT platform specifically catering to the 40+ population, ensuring it is user-friendly, accessible, and engaging for older and less tech-savvy individuals.</p></>)
             },
             {
-                header: "CASE STUDY",
+                header: "Case Study",
                 description: (<>
                     <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://docs.google.com/presentation/d/1OKFnNw2jx95yZi7JwrLX_LwNrF4yg3NQdvlP1B0Gfg0/edit?usp=sharing"} rel="noopener noreferrer" target="_blank"> <FaGoogleDrive className="text-black" /></Link></p>
                 </>)
@@ -397,12 +397,12 @@ export const projects =
         imageList: false,
         before: [
             {
-                header: "OVERVIEW",
+                header: "Overview",
                 description: (<>
                     <p>Pocket is a widely used application that enables users to save articles, videos, and various types of content for later viewing. Despite its popularity and utility, the current user interface of Pocket has become outdated, leading to a less optimal user experience. This case study delves into the process of redesigning the Pocket application to create a more modern, efficient, and user-friendly interface. By exploring the steps taken in the redesign process, this case study aims to highlight the methods and strategies employed to revamp Pocket, making it more intuitive and enjoyable for its users.</p></>)
             },
             {
-                header: "CASE STUDY",
+                header: "Case Study",
                 description: (<>
                     <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://curiouscreator.notion.site/Revamping-POCKET-App-85ffeb988e48416788c1e5d0590f59c7"} rel="noopener noreferrer" target="_blank"> <SiNotion className="text-black" /></Link></p>
                 </>)
@@ -417,13 +417,13 @@ export const projects =
         title: "Contract Commitments Dashboard",
         imageList: false,
         before: [{
-            header: "OVERVIEW",
+            header: "Overview",
             description: (<>
                 <p>Navigating the complexities of legal documents can be daunting, especially for individuals unfamiliar with legal jargon and procedures. Traditionally, one would consult a legal expert to review and understand these documents before signing. This often involves booking appointments, visiting law firms, and enduring a time-consuming and cumbersome process.</p>
                 <p>This case study explores the development of a digital solution aimed at simplifying the review of legal documents. The product assists users in comparing major aspects of their documents against standard templates, enabling them to evaluate key elements without immediate expert consultation. By leveraging technology, the solution aims to provide a more efficient, hassle-free way for users to understand and verify their legal documents, ultimately bridging the gap between legal expertise and user accessibility.</p></>)
         },
         {
-            header: "CASE STUDY",
+            header: "Case Study",
             description: (<>
                 <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://medium.com/@katiyarsakshi1/legalise-mobile-app-ui-ux-case-study-82e701804f9e"} rel="noopener noreferrer" target="_blank"> <FaMedium className="text-black" /></Link></p>
             </>)

@@ -17,13 +17,13 @@ const printNormalProject = (header, setHeader, nextProject) => {
     return(
         <Stairs backgroundColor="#FFF">
         <main className="flex min-h-screen font-exo flex-col items-center justify-between text-6xl text-slate-900 bg-black overflow-clip hover:overflow-y-visible" style={{zIndex: -3}}>
-          <div className=" bg-white rounded-b-10xl" style={{zIndex: 1}}>
+          <div className="pt-40 bg-white rounded-b-10xl" style={{zIndex: 1}}>
             {
                 (projects[header]? projects[header]["before"] : []).map((element) => {
                     return (
-                        <div className='pt-60 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
-                            <span className='text-xl p-12 text-center justify-center w-full' style={{fontSize: "1vw"}}> {element.header} </span>
-                            <div className='w-full text-left p-12 font-normal leading-normal' style={{fontSize: "2vw"}}>
+                        <div className='px-20 pt-20 w-screen text-black font-exo bg-white height-screen text-center'>
+                            <span className=' text-xl text-center justify-center w-full' style={{fontSize: "1vw"}}> {element.header} </span>
+                            <div className='w-full text-left font-normal leading-normal' style={{fontSize: "1.5vw"}}>
                                 {element.description}
                             </div>
                         </div>
@@ -36,9 +36,9 @@ const printNormalProject = (header, setHeader, nextProject) => {
             {
                 (projects[header] ? projects[header]["after"] : []).map((element) => {
                     return (
-                        <div className='pt-60 p-20 w-screen text-black font-exo bg-white height-screen text-center'>
-                            <span className='text-xl p-12 text-center justify-center w-full' style={{fontSize: "1vw"}}> {element.header} </span>
-                            <div className='w-full text-left p-12 font-normal leading-normal' style={{fontSize: "2vw"}}>
+                        <div className='px-20 pt-20 w-screen text-black font-exo bg-white height-screen text-center'>
+                            <span className='text-xl text-center justify-center w-full' style={{fontSize: "1vw"}}> {element.header} </span>
+                            <div className='w-full text-left font-normal leading-normal' style={{fontSize: "1.5vw"}}>
                                 {element.description}
                             </div>
                         </div>
