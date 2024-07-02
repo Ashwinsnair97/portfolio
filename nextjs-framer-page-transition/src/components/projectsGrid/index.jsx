@@ -29,8 +29,8 @@ const Card = ({ card }) => {
     return (
       <div
         key={card.id}
-        className="group relative h-[50vh] w-[50vh] overflow-hidden bg-neutral-200 justify-center rounded-3xl cursor-pointer"
-        style={{border: "1px solid #555"}}
+        className="group relative h-[23vw] w-[23vw] overflow-hidden bg-neutral-200 justify-center cursor-pointer"
+        style={{border: "1px solid #555", borderRadius: "0.8vw"}}
         onClick={()=> router.push(card.link) }
       >
         <div

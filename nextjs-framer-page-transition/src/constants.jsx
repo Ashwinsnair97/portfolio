@@ -172,13 +172,13 @@ export const projects =
                 description: (
                     <>
                         <p>
-                       <span className="font-bold"> User Flow:</span> Elevating the user journey with meticulous attention to detail, creating a crafted experience that offers customized flows for streamlined interaction and comprehension.
+                            <span className="font-bold"> User Flow:</span> Elevating the user journey with meticulous attention to detail, creating a crafted experience that offers customized flows for streamlined interaction and comprehension.
                         </p>
                         <p>
-                       <span className="font-bold"> Intuitiveness: </span> Enhancing usability by simplifying navigation through an intuitive layout, ensuring a seamless and user-friendly experience.
+                            <span className="font-bold"> Intuitiveness: </span> Enhancing usability by simplifying navigation through an intuitive layout, ensuring a seamless and user-friendly experience.
                         </p>
                         <p>
-                       <span className="font-bold"> Report Responsiveness: </span> Improving operational efficiency by reducing wait times, ensuring prompt responses to user actions, and delivering timely and accurate reports.
+                            <span className="font-bold"> Report Responsiveness: </span> Improving operational efficiency by reducing wait times, ensuring prompt responses to user actions, and delivering timely and accurate reports.
                         </p>
                     </>
                 )
@@ -238,24 +238,24 @@ export const projects =
                         <ul>
                             <li>Grouping of filters= The major pain point from the user base was the presence of a lot of options on the first page itself.  It was clearly pointing in the direction of going through the Hick’s Law checklist. So the ways to deal with were as follows: </li>
                             <ol>
-                            <li>Try to reduce the number of options</li>
-                            <li>Find a way to hide items</li>
-                            <li>If you can’t go with any of the above, try to put all the options in an easily skimmable order and make sure the items are familiar. 
+                                <li>Try to reduce the number of options</li>
+                                <li>Find a way to hide items</li>
+                                <li>If you can’t go with any of the above, try to put all the options in an easily skimmable order and make sure the items are familiar.
 
-As you can see, we went ahead with the third one, as it was the only option that was most suitable as per the requirements from the user. We narrowed down all the filters and put them in separate buckets for better decision making. </li>
-                             </ol>
-                             
+                                    As you can see, we went ahead with the third one, as it was the only option that was most suitable as per the requirements from the user. We narrowed down all the filters and put them in separate buckets for better decision making. </li>
+                            </ol>
+
                             <li>Nudge= Since the user base for this tool was mostly an elder age group (50+ age) who is majorly accustomed to the Excel and Power BI, introducing something that is entirely different in terms of look and feel, could have proven to be a drastic dip in usage, engagement and retention. To solve this problem, we introduced <span className="font-bold">Hotspots</span>- a minimalist UX element that is designed to capture a user’s attention without being intrusive or annoying. We wanted to give subtle hints/ signifiers (small cues or context changes) that can affect user’s decisions.</li>
                         </ul>
                         <p>SIMULATION SCREEN :</p>
                         <ul>
-                        <li>Validation Rules= To reduce the friction and an extra manual effort of going through all the steps and then getting an error to let the user know about the incorrect values entered, we used the Anchoring Bias- Users rely heavily on the first piece of information they see.   
-                        It is useful to increase the perceived value. </li>
+                            <li>Validation Rules= To reduce the friction and an extra manual effort of going through all the steps and then getting an error to let the user know about the incorrect values entered, we used the Anchoring Bias- Users rely heavily on the first piece of information they see.
+                                It is useful to increase the perceived value. </li>
                             <li>Disclaimer in Simulation Page= Before the users click on Run Simulation to see the impact, we take a kind of double confirmation from them to check if they did make changes in the recipe (which is mandatory to do for at least one recipe). This is pertaining to the <span className="font-bold">reactance</span>- a UX principle, psychology related to user behavior, where people tend to react indifferently when they are taken away from their choices or range of options. But we also kept in mind that it doesn’t incline towards dark pattern. </li>
                         </ul>
                         <p>IMPACT SCREEN :</p>
                         <ul>
-                        <li>Color coded accordions= The tree/ hierarchy chart and the cards showing the impact for the respective sections as used in the filters, have the same colors, hence incorporating <span className="font-bold">‘Law of Similarity’</span>- users perceive relationship between the elements that look similar. This helps the users to connect the related elements and their insights quickly without much of a mental hassle. It also considers another UX principle as well which is <span className="font-bold">‘Discoverability’</span>- The ease with which users can discover the features of the tool. It means that the user can extract the knowledge they need of the product by looking at it. If the key elements to take action are well presented then discoverability is good.  </li>
+                            <li>Color coded accordions= The tree/ hierarchy chart and the cards showing the impact for the respective sections as used in the filters, have the same colors, hence incorporating <span className="font-bold">‘Law of Similarity’</span>- users perceive relationship between the elements that look similar. This helps the users to connect the related elements and their insights quickly without much of a mental hassle. It also considers another UX principle as well which is <span className="font-bold">‘Discoverability’</span>- The ease with which users can discover the features of the tool. It means that the user can extract the knowledge they need of the product by looking at it. If the key elements to take action are well presented then discoverability is good.  </li>
                             <li>Floating Action Buttons= We have provided the users with numerous options as download excel, download the slides in Powerpoint and save the simulation results and metrics. Since one of the use cases involve multi selection, we kept a FAB at the mid bottom of the screen, for displaying the selected filters. </li>
                         </ul>
                     </>
@@ -289,16 +289,8 @@ As you can see, we went ahead with the third one, as it was the only option that
                 header: "OVERVIEW",
                 description: (
                     <>
-                    <p>(Will be giving later)</p>
-                        {/* <p>
-                       <span className="font-bold"> User Flow:</span> Elevating the user journey with meticulous attention to detail, creating a crafted experience that offers customized flows for streamlined interaction and comprehension.
-                        </p>
-                        <p>
-                       <span className="font-bold"> Intuitiveness: </span> Enhancing usability by simplifying navigation through an intuitive layout, ensuring a seamless and user-friendly experience.
-                        </p>
-                        <p>
-                       <span className="font-bold"> Report Responsiveness: </span> Improving operational efficiency by reducing wait times, ensuring prompt responses to user actions, and delivering timely and accurate reports.
-                        </p> */}
+                        <p>A user- friendly reporting interface to track Global Food metrics with automated consolidation of manual inputs to find difficulties in validating sales impacting KPIs and helping the Mars senior management teams align, manage and deploy business strategy across the functions.</p>
+
                     </>
                 )
 
@@ -318,7 +310,7 @@ As you can see, we went ahead with the third one, as it was the only option that
                         </ul>
                         <p>Admin Page:</p>
                         <ul>
-                        <li>Intelligent findings panel- highlighting the KPIs’ deviation against target values</li>
+                            <li>Intelligent findings panel- highlighting the KPIs’ deviation against target values</li>
                             <li>Create/ Modify/ Delete KPIs (single or multi-select) functionality</li>
                             <li>Ability to change KPI names</li>
                             <li>Manage user access to the application</li>
@@ -364,19 +356,19 @@ As you can see, we went ahead with the third one, as it was the only option that
             description: (
                 <>
                     <ul>
-                    <li><span className="font-bold"> User Centric Design:</span> Design and structure of the tool to be highly intuitive for the user needs</li>
-                    <li><span className="font-bold"> Visual Hierarchy:</span> Clear structure including separation between sections to ensure an intuitive interface</li>
-                    <li><span className="font-bold"> Minimalism with a purpose:</span> High emphasis on decluttering and simplifying the user interface for better user experience</li>
-                    <li><span className="font-bold"> Consistent Design Language:</span> Consistency in colors, typography and layouts fostering familiarity</li>
+                        <li><span className="font-bold"> User Centric Design:</span> Design and structure of the tool to be highly intuitive for the user needs</li>
+                        <li><span className="font-bold"> Visual Hierarchy:</span> Clear structure including separation between sections to ensure an intuitive interface</li>
+                        <li><span className="font-bold"> Minimalism with a purpose:</span> High emphasis on decluttering and simplifying the user interface for better user experience</li>
+                        <li><span className="font-bold"> Consistent Design Language:</span> Consistency in colors, typography and layouts fostering familiarity</li>
                     </ul>
                 </>
             )
 
         },
-    
-    ],
+
+        ],
         imgs: ["/imgs/sop_cockpit/1.png", "/imgs/sop_cockpit/2.png", "/imgs/sop_cockpit/3.png", "/imgs/sop_cockpit/4.png", "/imgs/sop_cockpit/5.png"],
-        
+
     },
     "ott": {
         id: "ott",
@@ -391,8 +383,8 @@ As you can see, we went ahead with the third one, as it was the only option that
             {
                 header: "CASE STUDY",
                 description: (<>
-                    <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://docs.google.com/presentation/d/1OKFnNw2jx95yZi7JwrLX_LwNrF4yg3NQdvlP1B0Gfg0/edit?usp=sharing"}  rel="noopener noreferrer" target="_blank"> <FaGoogleDrive className="text-black"/></Link></p>
-                    </>)
+                    <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://docs.google.com/presentation/d/1OKFnNw2jx95yZi7JwrLX_LwNrF4yg3NQdvlP1B0Gfg0/edit?usp=sharing"} rel="noopener noreferrer" target="_blank"> <FaGoogleDrive className="text-black" /></Link></p>
+                </>)
             },
         ],
         after: [],
@@ -412,8 +404,8 @@ As you can see, we went ahead with the third one, as it was the only option that
             {
                 header: "CASE STUDY",
                 description: (<>
-                    <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://curiouscreator.notion.site/Revamping-POCKET-App-85ffeb988e48416788c1e5d0590f59c7"}  rel="noopener noreferrer" target="_blank"> <SiNotion className="text-black"/></Link></p>
-                    </>)
+                    <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://curiouscreator.notion.site/Revamping-POCKET-App-85ffeb988e48416788c1e5d0590f59c7"} rel="noopener noreferrer" target="_blank"> <SiNotion className="text-black" /></Link></p>
+                </>)
             },
         ],
         after: [],
@@ -433,8 +425,8 @@ As you can see, we went ahead with the third one, as it was the only option that
         {
             header: "CASE STUDY",
             description: (<>
-                <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://medium.com/@katiyarsakshi1/legalise-mobile-app-ui-ux-case-study-82e701804f9e"}  rel="noopener noreferrer" target="_blank"> <FaMedium className="text-black"/></Link></p>
-                </>)
+                <p className="flex">To view the full case study, click here <Link className="self-center mx-6" href={"https://medium.com/@katiyarsakshi1/legalise-mobile-app-ui-ux-case-study-82e701804f9e"} rel="noopener noreferrer" target="_blank"> <FaMedium className="text-black" /></Link></p>
+            </>)
         },],
         after: [],
         imgs: ["/imgs/legalise/1.png", "/imgs/legalise/2.png", "/imgs/legalise/3.png", "/imgs/legalise/4.png"],
@@ -452,7 +444,7 @@ As you can see, we went ahead with the third one, as it was the only option that
     "rc": {
         id: "rc",
         title: "Contract Commitments Dashboard",
-        imageList: false,
+        imageList: true,
         before: [],
         after: [],
         imgs: ["/imgs/rc/1.png", "/imgs/rc/2.png", "/imgs/rc/3.png", "/imgs/rc/4.png"],

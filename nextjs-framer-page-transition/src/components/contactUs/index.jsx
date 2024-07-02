@@ -27,7 +27,7 @@ export default function ContactUs() {
         </div>
         <div className="w-full justify-right text-right" style={{ textAlign: "-webkit-right", fontSize: "1vw" }}>
           <div className="w-1/2 text-white px-20">
-            Developed by <span className="font-bold">ASHWIN</span>
+            Developed by <Link className="font-bold" href="https://www.linkedin.com/in/ashwin-s-bb6652193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" rel="noopener noreferrer" target="_blank">ASHWIN</Link>
           </div>
         </div>
       </div>
